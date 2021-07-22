@@ -17,12 +17,13 @@
 package main
 
 import (
-	log "github.com/alecthomas/log4go"
 	"errors"
-	myrpc "github.com/Terry-Mao/gosnowflake/rpc"
+	myrpc "gosnowflake/rpc"
 	"net"
 	"net/rpc"
 	"time"
+
+	log "github.com/alecthomas/log4go"
 )
 
 type SnowflakeRPC struct {

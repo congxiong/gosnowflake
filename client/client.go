@@ -17,11 +17,9 @@
 package client
 
 import (
-	log "github.com/alecthomas/log4go"
 	"encoding/json"
 	"errors"
-	myrpc "github.com/Terry-Mao/gosnowflake/rpc"
-	"github.com/samuel/go-zookeeper/zk"
+	myrpc "gosnowflake/rpc"
 	"math/rand"
 	"net/rpc"
 	"path"
@@ -29,6 +27,9 @@ import (
 	"strconv"
 	"sync"
 	"time"
+
+	log "github.com/alecthomas/log4go"
+	"github.com/samuel/go-zookeeper/zk"
 )
 
 const (
